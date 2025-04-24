@@ -1,0 +1,9 @@
+input: data/raw/poems.txt
+model_prefix: data/tokenizer
+vocab_size: 32000
+model_type: bpe        # 可选: unigram / bpe / char / word
+character_coverage: 0.9995
+pad_id: 0
+unk_id: 1
+bos_id: 2
+eos_id: 3
