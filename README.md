@@ -73,3 +73,11 @@ uvicorn api.main:app --host 0.0.0.0 --port 8000
 
 ---
 
+## ✍️ 手撕 Transformer 之旅
+
+> 2026-04-06 起航 🚢
+
+今天开始手撕 Transformer！从零一行行敲出 Attention、MultiHead、FFN、LayerNorm、位置编码……不调包，不抄作业，用代码把论文里的每一个公式都跑通一遍。哈哈，冲鸭 🥳
+
+---
+
