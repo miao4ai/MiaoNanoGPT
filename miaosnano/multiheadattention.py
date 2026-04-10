@@ -1,3 +1,11 @@
 import math
 import numpy as np 
-from torch import nn
+import torch.nn as nn
+import torch.nn.Function as F
+
+class MultiHeadattAttention(nn.Module):
+    def __init__(self, d_k, d_model, n_heads)：
+        super().__init()__
+
+        self.d_k = d_k
+
