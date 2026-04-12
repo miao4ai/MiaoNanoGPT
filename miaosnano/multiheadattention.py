@@ -10,4 +10,5 @@ class MultiHeadAttention(nn.Module):
         self.d_k = d_k
         self.n_heads = n_heads
 
-        self.
+        self.key = nn.Linear(d_model, d_k*n_heads)
+        self.query = nn.Linear(d_model, d_k* n_heads)
