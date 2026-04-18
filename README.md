@@ -79,5 +79,16 @@ uvicorn api.main:app --host 0.0.0.0 --port 8000
 
 今天开始手撕 Transformer！从零一行行敲出 Attention、MultiHead、FFN、LayerNorm、位置编码……不调包，不抄作业，用代码把论文里的每一个公式都跑通一遍。哈哈，冲鸭 🥳
 
+### 进度
+
+| 模块 | 文件 | 状态 |
+|------|------|------|
+| Embedding | `miaosnano/embedding.py` | ✅ 完成 |
+| Multi-Head Attention | `miaosnano/multiheadattention.py` | ✅ 完成 |
+| Feed-Forward Network | - | ⬜ TODO |
+| LayerNorm | - | ⬜ TODO |
+| Positional Encoding | - | ⬜ TODO |
+| Transformer Block | - | ⬜ TODO |
+
 ---
 
