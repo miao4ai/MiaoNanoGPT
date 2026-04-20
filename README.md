@@ -87,7 +87,7 @@ uvicorn api.main:app --host 0.0.0.0 --port 8000
 | Multi-Head Attention | `miaosnano/multiheadattention.py` | ✅ 完成 |
 | Feed-Forward Network | - | ⬜ TODO |
 | LayerNorm | - | ⬜ TODO |
-| Positional Encoding | - | ⬜ TODO |
+| Positional Encoding | `miaosnano/positional_encoding.py` | ✅ 完成 |
 | Transformer Block | - | ⬜ TODO |
 
 ---
