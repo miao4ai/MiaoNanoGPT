@@ -85,10 +85,10 @@ uvicorn api.main:app --host 0.0.0.0 --port 8000
 |------|------|------|
 | Embedding | `miaosnano/embedding.py` | ✅ 完成 |
 | Multi-Head Attention | `miaosnano/multiheadattention.py` | ✅ 完成 |
-| Feed-Forward Network | - | ⬜ TODO |
-| LayerNorm | - | ⬜ TODO |
+| Feed-Forward Network | `miaosnano/transformer_block.py` | ✅ 完成 |
+| LayerNorm | `miaosnano/transformer_block.py` (用 `nn.LayerNorm`) | ✅ 完成 |
 | Positional Encoding | `miaosnano/positional_encoding.py` | ✅ 完成 |
-| Transformer Block | - | ⬜ TODO |
+| Transformer Block | `miaosnano/transformer_block.py` | ✅ 完成 |
 
 ---
 
