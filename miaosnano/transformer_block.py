@@ -31,8 +31,8 @@ class TransformerBlock(nn.Module):
 
         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, x):
+    def forward(self, x, mask=None):
         # Pre-LayerNorm: 残差连接包住 attention 和 ffn
-        x = x + self.dropout(self.attn(self.norm1(x)))
+        x = x + self.dropout(self.attn(self.norm1(x), mask=mask))
         x = x + self.dropout(self.ffn(self.norm2(x)))
         return x

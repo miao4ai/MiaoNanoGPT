@@ -89,6 +89,8 @@ uvicorn api.main:app --host 0.0.0.0 --port 8000
 | LayerNorm | `miaosnano/transformer_block.py` (用 `nn.LayerNorm`) | ✅ 完成 |
 | Positional Encoding | `miaosnano/positional_encoding.py` | ✅ 完成 |
 | Transformer Block | `miaosnano/transformer_block.py` | ✅ 完成 |
+| Causal Mask | `miaosnano/multiheadattention.py` (`mask` 参数) | ✅ 完成 |
+| **完整 GPT** | `miaosnano/gpt.py` | ✅ 完成 🎉 |
 
 ---
 

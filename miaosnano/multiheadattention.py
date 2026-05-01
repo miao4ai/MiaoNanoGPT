@@ -16,7 +16,7 @@ class MultiHeadAttention(nn.Module):
         self.value = nn.Linear(d_model, d_k * n_heads)
         self.fc = nn.Linear(d_k * n_heads, d_model)
 
-    def forward(self, x):
+    def forward(self, x, mask=None):
         batch_size = x.size(0)
 
         # Linear projections: (B, T, D) -> (B, T, n_heads * d_k)
@@ -31,6 +31,11 @@ class MultiHeadAttention(nn.Module):
 
         # Scaled dot-product attention: (B, n_heads, T, T)
         attn_scores = q @ k.transpose(-2, -1) / math.sqrt(self.d_k)
+
+        # Apply causal mask if provided (mask is True where attention should be blocked)
+        if mask is not None:
+            attn_scores = attn_scores.masked_fill(mask, float('-inf'))
+
         attn_weights = F.softmax(attn_scores, dim=-1)
 
         # Attention output: (B, n_heads, T, d_k) -> (B, T, n_heads * d_k)
