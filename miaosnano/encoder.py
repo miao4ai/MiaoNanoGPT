@@ -4,4 +4,5 @@ from torch import nn
 
 
 class Encoder:
-    __init__()
+    __init__():
+        self.
